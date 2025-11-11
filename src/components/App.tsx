@@ -1,4 +1,3 @@
-import { TextField } from '@mui/material';
 import { Form } from './Form';
 import { Logo } from './Logo';
 import { SocialLinks } from './SocialLinks';
@@ -13,13 +12,9 @@ export const App: React.FC = () => {
           Pellentesque habitant morbi tristique senectus et netus et malesuada
           fames ac turpis egestas.
         </p>
-        <video
-          src="/wedding.mp4"
-          className="section"
-          autoPlay
-          muted
-          playsInline
-        />
+        <video className="section" autoPlay muted playsInline>
+          <source src="wedding.mp4" />
+        </video>
 
         <Form />
         <SocialLinks />
