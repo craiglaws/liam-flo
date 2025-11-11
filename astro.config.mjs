@@ -4,5 +4,6 @@ import react from '@astrojs/react';
 
 export default defineConfig({
   integrations: [react()],
+   site: 'https://craiglaws.github.io/liam-flo  ',
 });
 
