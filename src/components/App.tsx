@@ -13,7 +13,7 @@ export const App: React.FC = () => {
           fames ac turpis egestas.
         </p>
         <video className="section" autoPlay muted playsInline>
-          <source src="wedding.mp4" />
+          <source src="/wedding.mp4" type="video/mp4" />
         </video>
 
         <Form />
