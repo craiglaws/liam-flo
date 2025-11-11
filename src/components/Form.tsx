@@ -1,3 +1,5 @@
+import { VideoBox } from './VideoBox';
+
 export const Form: React.FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -5,11 +7,8 @@ export const Form: React.FC = () => {
     console.log('Form submitted!');
   };
   return (
-    <form onSubmit={handleSubmit} className="form-box">
-      <div id="top-left" className="corner"></div>
-      <div id="top-right" className="corner"></div>
-      <div id="bottom-right" className="corner"></div>
-      <div id="bottom-left" className="corner"></div>
+    <form onSubmit={handleSubmit} className="form-box section">
+      <VideoBox />
       <h2>Get in touch</h2>
       <div className="input-container">
         <input placeholder="Name" className="input-field" type="text" />

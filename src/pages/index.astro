@@ -1,17 +1,24 @@
 ---
-import "../styles/styles.css";
-import { App } from "../components";
+import '../styles/styles.css';
+import { Logo, SocialLinks } from '../components';
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>Liam Flo Video</title>
   </head>
   <body>
-    <App />
+    <div class="main-content">
+      <Logo />
+      <h1 class="text-center">Liam Flo Video</h1>
+      <img src="/rec.png" alt="Recording overlay" class="coming-soon section" />
+      <div class="text-center" style="margin-bottom: 30px;">
+        For any enquiries please send a message on Insta or email
+      </div>
+      <SocialLinks />
+    </div>
   </body>
 </html>

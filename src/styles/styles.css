@@ -4,9 +4,12 @@
 /* Variables */
 /* ===================== */
 :root {
-  --bg: #d4b7b8;
-  --text: #fff;
+  --bg: #fff;
+  --text: #111;
   --border: #111;
+
+   --corner-size: 30px;
+  --corner-border: 1px solid var(--border);
 }
 
 /* ===================== */
@@ -20,6 +23,7 @@ body {
   background-color: var(--bg);
   font-family: 'Alata', sans-serif;
   margin: 0;
+  color: var(--text);
 }
 
 h1,
@@ -31,13 +35,7 @@ h6 {
   font-family: 'Shrikhand', serif;
   font-weight: 400;
   margin: 0;
-}
-
-.logo {
-  width: 100%;
-  max-width: 500px;
-  display: block;
-  margin: 0 auto;
+  color: var(--text)
 }
 
 .main-content {
@@ -47,6 +45,15 @@ h6 {
   flex-direction: column;
   justify-self: center;
 }
+ .section{
+  margin: 30px 0;
+ }
+
+.logo {
+  height: 125px;
+  display: block;
+  margin: 0 auto;
+}
 
 /* ===================== */
 /* Form Styles */
@@ -54,56 +61,40 @@ h6 {
 form {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  padding: 30px;
+  gap: 1.5rem;
+  padding: 2rem;
   position: relative;
-  margin-top: 30px;
+  margin-top: 2rem;
 }
 
 .corner {
   position: absolute;
-}
-
-#reaction .corner {
+  width: var(--corner-size);
+  height: var(--corner-size);
   background: none;
-  height: 10px;
-  width: 10px;
+}
+.corner.top-left {
+  top: 0; left: 0;
+  border-top: var(--corner-border);
+  border-left: var(--corner-border);
 }
 
-#top-left {
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border-top: 2px solid var(--border);
-  border-left: 2px solid var(--border);
+.corner.top-right {
+  top: 0; right: 0;
+  border-top: var(--corner-border);
+  border-right: var(--corner-border);
 }
 
-#top-right {
-  top: 0;
-  right: 0;
-  width: 20px;
-  height: 20px;
-  border-top: 2px solid var(--border);
-  border-right: 2px solid var(--border);
+.corner.bottom-right {
+  bottom: 0; right: 0;
+  border-bottom: var(--corner-border);
+  border-right: var(--corner-border);
 }
 
-#bottom-right {
-  bottom: 0;
-  right: 0;
-  width: 20px;
-  height: 20px;
-  border-bottom: 2px solid var(--border);
-  border-right: 2px solid var(--border);
-}
-
-#bottom-left {
-  bottom: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border-bottom: 2px solid var(--border);
-  border-left: 2px solid var(--border);
+.corner.bottom-left {
+  bottom: 0; left: 0;
+  border-bottom: var(--corner-border);
+  border-left: var(--corner-border);
 }
 
 /* ===================== */
@@ -195,6 +186,8 @@ textarea {
 /* ===================== */
 video {
   width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 3px;
 }
 
 /* ===================== */
@@ -209,4 +202,19 @@ video {
 .social-link img {
   width: 30px;
   height: 30px;
+}
+
+
+/* ===================== */
+/* Utils */
+/* ===================== */
+.text-center{
+  text-align: center;
+}
+
+
+
+.coming-soon{
+  width: 100%;
+  max-width: 500px;
 }
