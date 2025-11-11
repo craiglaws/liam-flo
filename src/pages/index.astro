@@ -1,6 +1,7 @@
 ---
 import '../styles/styles.css';
 import { Logo, SocialLinks } from '../components';
+import rec from '../assets/rec.png';
 ---
 
 <html lang="en">
@@ -14,7 +15,7 @@ import { Logo, SocialLinks } from '../components';
     <div class="main-content">
       <Logo />
       <h1 class="text-center">Liam Flo Video</h1>
-      <img src="/rec.png" alt="Recording overlay" class="coming-soon section" />
+      <img src={rec.src} alt="Recording overlay" class="coming-soon section" />
       <div class="text-center" style="margin-bottom: 30px;">
         For any enquiries please send a message on Insta or email
       </div>
