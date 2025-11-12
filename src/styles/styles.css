@@ -1,11 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Shrikhand&display=swap');
+@font-face {
+  font-family: 'Bakerie';
+  src: url('/liam-flo/fonts/bakerie.woff2') format('woff2'),
+       url('/liam-flo/fonts/bakerie.woff') format('woff'),
+       url('/liam-flo/fonts/bakerie.ttf') format('truetype'),
+       url('/liam-flo/fonts/bakerie.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+ 
 
 /* ===================== */
 /* Variables */
 /* ===================== */
 :root {
   --bg: #fff;
-  --text: #111;
+  --text: #005c62;
   --border: #111;
 
    --corner-size: 30px;
@@ -21,7 +31,8 @@
 
 body {
   background-color: var(--bg);
-  font-family: 'Alata', sans-serif;
+  font-family: 'Bakerie', sans-serif;
+  font-size: 20px;
   margin: 0;
   color: var(--text);
 }
@@ -32,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Shrikhand', serif;
+  font-family: 'Bakerie', serif;
   font-weight: 400;
   margin: 0;
   color: var(--text)
@@ -101,7 +112,7 @@ form {
 /* Buttons */
 /* ===================== */
 button {
-  font-family: 'Shrikhand', serif;
+  font-family: 'Bakerie', serif;
   position: relative;
   background: var(--bg);
   padding: 16px;
