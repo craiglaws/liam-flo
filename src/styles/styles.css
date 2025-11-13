@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'Bakerie';
-  src: url('/liam-flo/fonts/bakerie.woff2') format('woff2'),
-       url('/liam-flo/fonts/bakerie.woff') format('woff'),
-       url('/liam-flo/fonts/bakerie.ttf') format('truetype'),
-       url('/liam-flo/fonts/bakerie.otf') format('opentype');
+  src: url('/fonts/bakerie.woff2') format('woff2'),
+       url('/fonts/bakerie.woff') format('woff'),
+       url('/fonts/bakerie.ttf') format('truetype'),
+       url('/fonts/bakerie.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
